@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItem">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/recipe_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="२०८dp"
+                android:background="@drawable/rectangle_edit"
+                android:hint="Enter Recipe Name"
+                android:inputType="textCapWords"
+
+                android:paddingStart="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipe_name" />
+
+            <Spinner
+                android:id="@+id/category_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"
+
+                android:inputType="textCapWords"
+                android:paddingStart="14dp"
+                android:text="Enter the tags and press enter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category_name" />
+
+            <EditText
+                android:id="@+id/sp5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:background="@drawable/rectangle_edit"
+                android:inputType="textCapWords"
+                android:paddingStart="14dp"
+                app:layout_constraintBottom_toTopOf=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/time" />
+
+
+            <EditText
+                android:id="@+id/description_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/rectangle_edit"
+                android:inputType="textCapWords"
+                android:paddingStart="14dp"
+                app:layout_constraintBottom_toTopOf=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_name" />
+            app:layout_constraintBottom_toTopOf
+
+            <EditText
+                android:id="@+id/price_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/rectangle_edit"
+                android:inputType="numberDecimal"
+                android:paddingStart="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price" />
+
+            <RelativeLayout
+                android:id="@+id/linearLayout_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/add_item"
+                app:layout_constraintTop_toBottomOf="@+id/upload_img">
+
+                <ImageView
+                    android:id="@+id/recipe_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/vector_form_outer_boarder" />
+
+                <Button
+                    android:id="@+id/recipe_upload_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="220dp"
+                    android:background="@drawable/ic_file_upload" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/back_button" />
+
+                <TextView
+                    android:id="@+id/my_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="ADD AN ITEM"
+                    android:textAppearance="@style/my_menu"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/recipe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="RECIPE NAME"
+                android:textAppearance="@style/my_menu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/recipe_name_edit_text"
+                app:layout_constraintRight_toLeftOf="@id/food_choice_add"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+            <TextView
+                android:id="@+id/category_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="CATEGORY"
+                android:textAppearance="@style/my_menu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+
+                app:layout_constraintBottom_toTopOf="@id/category_edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recipe_name_edit_text" />
+
+
+            <TextView
+                android:id="@+id/time"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="०dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="TIMING"
+                android:textAppearance="@style/my_menu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/description_name"
+                app:layout_constraintTop_toBottomOf="@+id/category_edit_text"
+                app:layout_constraintVertical_bias="0.248"
+                tools:layout_editor_absoluteX="०dp" />
+
+            <LinearLayout
+                android:id="@+id/fg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="०dp"
+                android:layout_marginBottom="०dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/sp5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/time"
+                app:layout_constraintVertical_bias="0.0">
+
+                <Spinner
+                    android:id="@+id/fghf"
+                    android:layout_width="97px"
+                    android:layout_height="48px"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginRight="25px"
+
+                    android:layout_weight="0"
+
+                    android:inputType="textCapWords"
+                    android:paddingStart="14dp"
+                    android:text="Enter the tags and press enter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Spinner
+                    android:id="@+id/no2"
+                    android:layout_width="67px"
+                    android:layout_height="48px"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginRight="25px"
+
+                    android:layout_weight="0"
+
+                    android:inputType="textCapWords"
+                    android:paddingStart="14dp"
+                    android:text="Enter the tags and press enter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Spinner
+                    android:id="@+id/no3"
+                    android:layout_width="97px"
+                    android:layout_height="48px"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginRight="25px"
+
+                    android:layout_weight="0"
+
+                    android:inputType="textCapWords"
+                    android:paddingStart="14dp"
+                    android:text="Enter the tags and press enter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Spinner
+                    android:id="@+id/no4"
+                    android:layout_width="67px"
+                    android:layout_height="48px"
+                    android:layout_margin="20dp"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginRight="25px"
+
+                    android:layout_weight="0"
+
+                    android:inputType="textCapWords"
+                    android:paddingStart="14dp"
+                    android:text="Enter the tags and press enter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/description_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="DESCRIPTION"
+                android:textAppearance="@style/my_menu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/description_edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/category_edit_text"
+
+                />
+
+            <TextView
+                android:id="@+id/week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="०dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="WEEKDAYS"
+                android:textAppearance="@style/my_menu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@+id/description_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sp5"
+
+                />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="PRICE"
+                android:textAppearance="@style/my_menu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/price_edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description_edit_text" />
+
+            <TextView
+                android:id="@+id/upload_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="UPLOAD IMAGES"
+                android:textAppearance="@style/my_menu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@id/linearLayout_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/price_edit_text" />
+
+
+            <Button
+                android:id="@+id/add_item"
+                style="@style/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+
+                android:background="@drawable/rectangle2"
+                android:text="SAVE"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

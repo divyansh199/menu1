@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "440210552130",
+    "firebase_url": "https://naaniz-f02b7.firebaseio.com",
+    "project_id": "naaniz-f02b7",
+    "storage_bucket": "naaniz-f02b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440210552130:android:29939fc8caa3e6cee044db",
+        "android_client_info": {
+          "package_name": "com.example.naaniz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440210552130-6vcca6jgb4h1e353elpjec1ji8br29s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV37mD-Z2-db4LpcTJWSbO1AIoX-9qAC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440210552130-6vcca6jgb4h1e353elpjec1ji8br29s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440210552130:android:44c3acb04bc200fde044db",
+        "android_client_info": {
+          "package_name": "com.example.recipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440210552130-bg2mcf3kapfeqq78k6g0ppi07p2p52ie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recipe",
+            "certificate_hash": "9a943de63faf541044e50d18ce1e18be8db2b70b"
+          }
+        },
+        {
+          "client_id": "440210552130-6vcca6jgb4h1e353elpjec1ji8br29s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV37mD-Z2-db4LpcTJWSbO1AIoX-9qAC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440210552130-6vcca6jgb4h1e353elpjec1ji8br29s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
